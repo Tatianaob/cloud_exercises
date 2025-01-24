@@ -1,8 +1,6 @@
 # Creating the JSON molecules data file
 
 import jsonFileHandler
-
-
 data = jsonFileHandler.readJsonFile('files/insulin.json')
 
 if data != "" :

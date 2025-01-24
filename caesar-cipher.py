@@ -6,14 +6,12 @@ Creating a user-defined function
 def getDoubleAlphabet(alphabet):
     doubleAlphabet = alphabet + alphabet
     return doubleAlphabet
-    
-    
+  
 myAlphabet = "ABC"
 result = getDoubleAlphabet(myAlphabet)
 print(result)
 
 # Encrypting a message
-
 def getMessage():
     stringToEncrypt = input("Please enter a message to encrypt: ")
     return stringToEncrypt

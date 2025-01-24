@@ -1,4 +1,3 @@
-
 preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
 # Store the remaining sequence elements of human insulin in variables:  
 lsInsulin = "malwmrllpllallalwgpdpaaa"  
@@ -6,7 +5,6 @@ bInsulin = "fvnqhlcgshlvealylvcgergffytpkt"
 aInsulin = "giveqcctsicslyqlenycn"  
 cInsulin = "rreaedlqvgqvelgggpgagslqplalegslqkr"  
 insulin = bInsulin + aInsulin
-
 
 pKR = {
     'y':10.07,
@@ -20,13 +18,9 @@ pKR = {
 
 insulinY = float(preproInsulin.count('y'))
 print(insulinY)
-
 seqCount = ({x: float(insulin.count(x)) for x in ['y','c','k','h','r','d','e']})
 
-
-
 # Exercise 3: Writing the net charge formula
-
 pH = 0
 while (pH <= 14):
     netCharge = (

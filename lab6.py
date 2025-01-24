@@ -12,13 +12,10 @@ myVehicle = {
     "mileage": 0
 }
 
-
 for key, value in myVehicle.items():
     print("{} : {}".format(key,value))
     
-    
 myInventoryList = []
-
 with open('car_fleet.csv') as csvFile:
     csvReader = csv.reader(csvFile, delimiter=',')  
     lineCount = 0  
@@ -40,8 +37,6 @@ with open('car_fleet.csv') as csvFile:
             myInventoryList.append(currentVehicle)  
             lineCount += 1  
     print(f'Processed {lineCount} lines.')
-    
-    
     for myCarProperties in myInventoryList:
         for key, value in myCarProperties.items():
             print("{} : {}".format(key,value))
